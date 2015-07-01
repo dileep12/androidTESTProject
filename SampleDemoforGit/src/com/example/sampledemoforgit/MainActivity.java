@@ -1,10 +1,13 @@
 package com.example.sampledemoforgit;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -15,6 +18,15 @@ public class MainActivity extends ActionBarActivity {
 
 		TextView txtView = (TextView) findViewById(R.id.txtView);
 		txtView.setText("This is a Demo");
+
+		txtView.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Toast.makeText(getApplicationContext(), "This is a DEMO !!!",
+						Toast.LENGTH_SHORT).show();
+			}
+		});
 	}
 
 	@Override
