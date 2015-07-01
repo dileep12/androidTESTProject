@@ -19,6 +19,7 @@ public class MainActivity extends ActionBarActivity {
 		TextView txtView = (TextView) findViewById(R.id.txtView);
 		txtView.setText("This is a Demo");
 		txtView.setText("This is a Demo by dileep");
+		txtView.setText("first changes");
 
 		txtView.setOnClickListener(new OnClickListener() {
 
